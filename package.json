@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.3.7",
     "axios": "^1.11.0",
     "cheerio": "^1.1.2",
+    "feather-icons": "^4.29.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-feather": "^2.0.10",
