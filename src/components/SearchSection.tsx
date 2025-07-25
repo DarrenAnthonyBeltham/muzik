@@ -1,6 +1,10 @@
 import React from 'react'
 import { Search } from 'react-feather';
 
+const Drake = require('../assets/drake.webp');
+const CentralCee = require('../assets/centralcee.jpg');
+const CAS = require('../assets/CAS.jpg');
+
 const SearchSection = () => {
     return (
         <section className='py-16'>
@@ -35,9 +39,9 @@ const SearchSection = () => {
                 <div className='mt-8 flex items-center justify-center space-x-4'>
                     <span className='text-sm font-medium text-slate-500 dark:text-slate-400'>Trending:</span>
                     <div className='flex space-x-4'>
-                        <img src="" alt="Drake" className='inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-slate-900'/>
-                        <img src="" alt="Central Cee" className='inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-slate-900'/>
-                        <img src="" alt="Cigarettes After Sex" className='inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-slate-900'/>
+                        <img src={Drake} alt="Drake" className='inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-slate-900 object-cover'/>
+                        <img src={CentralCee} alt="Central Cee" className='inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-slate-900 object-cover'/>
+                        <img src={CAS} alt="Cigarettes After Sex" className='inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-slate-900 object-cover'/>
                     </div>
                 </div>
             </div>
