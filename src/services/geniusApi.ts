@@ -15,11 +15,7 @@ export const searchSongs = async (query: string): Promise<SongHit[]> => {
     throw new Error('Genius Access Token is missing. Check your .env file and restart the server.');
   }
 
-  const response = await fetch(`/search?q=${encodeURIComponent(query)}`, {
-    headers: {
-      'Authorization': `Bearer ${ACCESS_TOKEN}`,
-    },
-  });
+  const response = await fetch(`https://api.genius.com/search?q=${encodeURIComponent(query)}&access_token=${ACCESS_TOKEN}`);
 
   if (!response.ok) {
     throw new Error(`Failed to fetch songs from Genius API. Status: ${response.status}`);
