@@ -23,16 +23,14 @@ const FeaturedLyricsSection = () => {
                 const randomQuery = featuredQueries[Math.floor(Math.random() * featuredQueries.length)];
                 const results = await searchSongs(randomQuery);
 
-                console.log("Data from Genius API:", results); 
-
                 if (results && results.length > 0) {
                     setSong(results[0]);
                 } else {
                     setError(`Could not find the featured song: "${randomQuery}"`);
                 }
             } catch (err) {
-                console.error("Error processing API data:", err); 
-                setError("Failed to process data from the Genius API.");
+                console.error("Error fetching song data:", err);
+                setError("Failed to fetch data from the Genius API. Please check your API key and network connection.");
             } finally {
                 setIsLoading(false);
             }
@@ -71,7 +69,7 @@ const FeaturedLyricsSection = () => {
                         <h3 className="text-3xl font-bold text-slate-900 dark:text-white">{song.result.title}</h3>
                         <p className="text-xl text-slate-600 dark:text-slate-300 mb-6">{song.result.primary_artist.name}</p>
                         <p className="text-slate-700 dark:text-slate-300 leading-relaxed italic">
-                            A random snippet from a classic song...
+                            Click the button below to see the full lyrics for this song directly on Genius.
                         </p>
                         <a 
                             href={song.result.url}
