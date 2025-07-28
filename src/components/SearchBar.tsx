@@ -8,7 +8,7 @@ interface SearchBarProps {
     isLoading: boolean;
 }
 
-export const SearchBar = ({ query, setQuery, handleSearch, isLoading}: SearchBarProps) => {
+export const SearchBar = ({ query, setQuery, handleSearch, isLoading }: SearchBarProps) => {
     return (
         <form className='mt-12 max-w-2xl mx-auto' onSubmit={handleSearch}>
             <div className='relative group'>
