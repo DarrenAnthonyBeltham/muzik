@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { SongHit } from '../types/genius';
 import { ExternalLink } from 'react-feather';
 
@@ -8,9 +8,6 @@ interface SongLyricsPageProps {
 }
 
 export const SongLyricsPage = ({ song, onBack }: SongLyricsPageProps) => {
-    const [isLoading, setIsLoading] = useState<boolean>(false); 
-    const [error, setError] = useState<string | null>(null);
-
     return (
         <section className="py-12 md:py-16">
             <div className="container mx-auto px-4">
