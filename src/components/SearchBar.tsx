@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Search } from 'react-feather';
 
 interface SearchBarProps {
@@ -20,7 +20,7 @@ export const SearchBar = ({ query, setQuery, handleSearch, isLoading }: SearchBa
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search for an artist like 'Drake'..."
-                    className="w-full pl-14 pr-6 py-5 rounded-full text-lg bg-slate-100 dark:bg-slate-800 border-2 border-transparent focus:outline-none focus:ring-2"
+                    className="w-full pl-14 pr-32 py-5 rounded-full text-lg bg-slate-100 dark:bg-slate-800 border-2 border-transparent focus:outline-none focus:ring-2"
                     style={{ '--ring-color': 'var(--accent-color)' } as React.CSSProperties}
                     onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-color)'; }}
                     onBlur={(e) => { e.currentTarget.style.borderColor = 'transparent'; }}
