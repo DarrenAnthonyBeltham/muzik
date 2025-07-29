@@ -1,7 +1,5 @@
 import { SongHit } from '../types/genius';
 
-const API_URL = 'https://api.genius.com';
-
 const ACCESS_TOKEN = process.env.REACT_APP_GENIUS_ACCESS_TOKEN;
 
 interface ApiResponse {
