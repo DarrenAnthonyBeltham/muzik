@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# 🎵 Muzik - Lyrics Finder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Muzik is a sleek and modern web application designed for music enthusiasts who want to dive deeper than the melody. It provides a clean, intuitive interface to search for any artist and explore their discography. Users can select a song to view more details, including a direct link to the full lyrics on Genius.
 
-## Available Scripts
+The application features a dynamic, responsive design with a theme system that includes a dark mode toggle, creating a polished and user-friendly experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* **Artist Search:** Instantly search the entire Genius database for any artist.
+* **Dynamic Song Results:** View a grid of song results for your searched artist, complete with album art.
+* **Song Details Page:** Click on any song to navigate to a dedicated page showing more information.
+* **Direct Lyrics Link:** Provides a direct link to view the full, official lyrics for any song on Genius.com.
+* **Dark/Light Mode:** A theme toggle allows users to switch between a light and dark interface for comfortable viewing.
+* **Fully Responsive:** The design is optimized for a seamless experience on all devices, from mobile phones to desktops.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is built with a modern, frontend-focused technology stack:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **[React](https://reactjs.org/):** A powerful JavaScript library for building user interfaces.
+* **[TypeScript](https://www.typescriptlang.org/):** Adds static typing to JavaScript to improve code quality and maintainability.
+* **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
+* **[Genius API](https://genius.com/api-clients):** Used to fetch all song and artist data.
+* **[Vercel](https://vercel.com/):** For seamless deployment and hosting of the application.
